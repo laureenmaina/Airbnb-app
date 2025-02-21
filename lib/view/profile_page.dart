@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -41,13 +41,16 @@ class ProfilePage extends StatelessWidget {
                       radius: 35,
                       backgroundColor: Colors.black54,
                       backgroundImage: NetworkImage(
-                          "${FirebaseAuth.instance.currentUser!.photoURL}"),
+                          // "${FirebaseAuth.instance.currentUser!.photoURL}"
+                          ""
+                          ),
                     ),
                     SizedBox(width: size.width * 0.06),
                     Text.rich(
                       TextSpan(
                         text:
-                            "${FirebaseAuth.instance.currentUser!.displayName}\n",
+                            // "${FirebaseAuth.instance.currentUser!.displayName}\n",
+                            "",
                         style:
                             const TextStyle(fontSize: 20, color: Colors.black),
                         children: const [

@@ -14,7 +14,7 @@ class MapWithCustomInfoWindows extends StatefulWidget {
 }
 
 class _MapWithCustomInfoWindowsState extends State<MapWithCustomInfoWindows> {
-  LatLng myCurrentLocation = const LatLng(27.7172, 85.3240);
+  LatLng myCurrentLocation = const LatLng(1.2921, 36.8219);
   BitmapDescriptor customIcon = BitmapDescriptor.defaultMarker;
   late GoogleMapController googleMapController;
   // first you need to add a plackge called custom_info_window
@@ -33,12 +33,11 @@ class _MapWithCustomInfoWindowsState extends State<MapWithCustomInfoWindows> {
 
   // for custom maker
   Future<void> _loadMarkers() async {
-    customIcon = await BitmapDescriptor.asset(
-      const ImageConfiguration(),
-      "asset/images/marker.png",
-      height: 40,
-      width: 30,
+    customIcon = await BitmapDescriptor.fromAssetImage(
+      const ImageConfiguration(size: Size(40, 30)),
+      "assets/images/marker.png",
     );
+
     Size size = MediaQuery.of(context).size;
 
     placeCollection.snapshots().listen((QuerySnapshot streamSnapshot) {
@@ -57,6 +56,7 @@ class _MapWithCustomInfoWindowsState extends State<MapWithCustomInfoWindows> {
                   data['latitude'],
                   data['longitude'],
                 ),
+                
                 onTap: () {
                   _customInfoWindowController.addInfoWindow!(
                     Container(
@@ -236,17 +236,21 @@ class _MapWithCustomInfoWindowsState extends State<MapWithCustomInfoWindows> {
                       child: GoogleMap(
                         initialCameraPosition:
                             CameraPosition(target: myCurrentLocation),
-                        onMapCreated: (GoogleMapController controller) {
-                          googleMapController = controller;
-                          _customInfoWindowController.googleMapController =
-                              controller;
-                        },
+                            onMapCreated: (GoogleMapController controller) {
+                              setState(() {
+                                googleMapController = controller;
+                                _customInfoWindowController.googleMapController = controller;
+                              });
+                            },
                         onTap: (argument) {
                           _customInfoWindowController.hideInfoWindow!();
                         },
                         onCameraMove: (position) {
-                          _customInfoWindowController.onCameraMove!();
-                        },
+                          if (_customInfoWindowController.onCameraMove != null) {
+                            _customInfoWindowController.onCameraMove!();
+                          }
+                      },
+
                         markers: markers.toSet(),
                       ),
                     ),
@@ -309,3 +313,5 @@ class _MapWithCustomInfoWindowsState extends State<MapWithCustomInfoWindows> {
     );
   }
 }
+
+

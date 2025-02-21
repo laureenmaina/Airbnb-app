@@ -70,7 +70,7 @@ class Place {
     };
   }
 }
-
+//1
 final List<Place> listOfPlace = [
   Place(
     isActive: true,
@@ -78,7 +78,7 @@ final List<Place> listOfPlace = [
     image:
         "https://www.momondo.in/himg/b1/a8/e3/revato-1172876-6930557-765128.jpg",
     rating: 4.85,
-    review: 126,
+    review: 26,
     bedAndBathroom: "1 bed . Shared bathroom",
     date: "Nov 11-16",
     price: 38,
@@ -97,6 +97,7 @@ final List<Place> listOfPlace = [
       "https://www.theindiahotel.com/extra-images/banner-01.jpg",
     ],
   ),
+  //2
   Place(
     isActive: false,
     title: "Cosy room in fabulous condo!",
@@ -121,6 +122,7 @@ final List<Place> listOfPlace = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMkI1MoQDzLBF-prjIp6kyXpccVol16bsew&s"
     ],
   ),
+//3
   Place(
     isActive: true,
     title: "Bright room in nice apartment bas faron",
@@ -130,7 +132,7 @@ final List<Place> listOfPlace = [
     price: 34,
     address: "Mumbai, India",
     yearOfHostin: 4,
-    review: 160,
+    review: 26,
     bedAndBathroom: "1 bed . Shared bathroom",
     vendor: "Ole",
     vendorProfession: "Consultant",
@@ -146,6 +148,7 @@ final List<Place> listOfPlace = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1P0AxSntzNAgs2_Qnl1IJCb2EebN82-KbPg&s",
     ],
   ),
+  //4
   Place(
     isActive: true,
     title: "Connect with your heart to this magical place",
@@ -156,7 +159,7 @@ final List<Place> listOfPlace = [
     price: 76,
     address: "Lyon, France",
     yearOfHostin: 8,
-    review: 236,
+    review: 26,
     bedAndBathroom: "2 queen beds . Shared bathroom",
     vendor: "Benedicte",
     vendorProfession: "Teacher",
@@ -170,6 +173,7 @@ final List<Place> listOfPlace = [
       "https://www.grandhotelnepal.com/images/slideshow/3arzB-grand4.jpg",
     ],
   ),
+  //5
   Place(
     isActive: false,
     title: "En-Suite @ Sunrise Beach",
@@ -177,7 +181,7 @@ final List<Place> listOfPlace = [
     rating: 4.90,
     date: "Jan 26-29",
     price: 160,
-    review: 292,
+    review: 26,
     yearOfHostin: 10,
     bedAndBathroom: "1 double bed . Dedicated bathroom",
     address: "Rome, Italy",

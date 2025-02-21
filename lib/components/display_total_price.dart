@@ -37,7 +37,7 @@ class _DisplayTotalPriceState extends State<DisplayTotalPrice> {
                     ),
                   ),
                    Text(
-                    "Inclued all fees, before texes",
+                    "Inclued all fees, before taxes",
                     style: TextStyle(
                       color: Colors.black54,
                       fontSize: 16,

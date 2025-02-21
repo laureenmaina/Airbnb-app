@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>520843345070-a07rq955c9ncq36danoelltjnkk026pf.apps.googleusercontent.com</string>
+	<string>745044745250-8bhvbb497hnog602emolhs447ntpmgm4.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.520843345070-a07rq955c9ncq36danoelltjnkk026pf</string>
+	<string>com.googleusercontent.apps.745044745250-8bhvbb497hnog602emolhs447ntpmgm4</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>520843345070-gim2u8e794dpcjgn0fkdc9gibfhts48v.apps.googleusercontent.com</string>
+	<string>745044745250-d7s5pmseht6mmhv2kbfet9ggs9e51jpc.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDw9rRFjKyZA0rBExQTOD428hd-U29bagU</string>
+	<string>AIzaSyBSVCEg_iM_gTK1V-TqwrqyZsK9PspnWRw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>520843345070</string>
+	<string>745044745250</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.airbnbAppUi</string>
 	<key>PROJECT_ID</key>
-	<string>airbnb-app-263cd</string>
+	<string>airbnb-7fcda</string>
 	<key>STORAGE_BUCKET</key>
-	<string>airbnb-app-263cd.appspot.com</string>
+	<string>airbnb-7fcda.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:520843345070:ios:e41f01c1bc0388452ec13f</string>
+	<string>1:745044745250:ios:d2cd9084b21d2ed625fe7b</string>
 </dict>
 </plist>

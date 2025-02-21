@@ -15,7 +15,8 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
   // collection for category
   final CollectionReference categoryCollection =
-      FirebaseFirestore.instance.collection("AppCategory");
+      FirebaseFirestore.instance.collection(" ");
+      //FirebaseFirestore.instance.collection("myAppCpollection");
 
   int selectedIndex = 0;
   @override
@@ -37,7 +38,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   children: [
                    // for switch button
                     DisplayTotalPrice(),
-                    SizedBox(height: 15),
+                    SizedBox(height: 10),
                     // displat the place items
                     DisplayPlace(),
                   
